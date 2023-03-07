@@ -8,6 +8,10 @@ public class PrimeNumber
         Scanner takeInput = new Scanner(System.in);
         System.out.println("Enter the number you want to check if prime or not");
         number = takeInput.nextInt();
+        if(number == 1)
+        {
+            isPrime = false;
+        }
         if (number == 2)
         {
             System.out.println("Number is prime");
