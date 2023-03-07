@@ -2,12 +2,8 @@ package com.knoldus.Question4;
 import java.util.Scanner;
 public class CheckPositiveNegativeZero
 {
-    public static void main(String args[])
+    public static void checkNumber(int number)
     {
-        int number;
-        Scanner takeInput = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        number = takeInput.nextInt();
         if(number>0)
         {
             System.out.println("Number is positive");
@@ -20,5 +16,13 @@ public class CheckPositiveNegativeZero
         {
             System.out.println("Number is 0");
         }
+    }
+    public static void main(String args[])
+    {
+        int number;
+        Scanner takeInput = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        number = takeInput.nextInt();
+        checkNumber(number);
     }
 }

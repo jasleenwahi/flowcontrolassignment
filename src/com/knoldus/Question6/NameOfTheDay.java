@@ -2,12 +2,8 @@ package com.knoldus.Question6;
 import java.util.Scanner;
 public class NameOfTheDay
 {
-    public static void main(String args[])
+    public static void printNameOfTheDay(int dayNumber)
     {
-        int dayNumber;
-        Scanner takeInput = new Scanner(System.in);
-        System.out.println("Enter the day number");
-        dayNumber=takeInput.nextInt();
         switch (dayNumber)
         {
             case 1:
@@ -35,5 +31,13 @@ public class NameOfTheDay
                 System.out.println("Enter a valid day number");
                 break;
         }
+    }
+    public static void main(String args[])
+    {
+        int dayNumber;
+        Scanner takeInput = new Scanner(System.in);
+        System.out.println("Enter the day number");
+        dayNumber=takeInput.nextInt();
+        printNameOfTheDay(dayNumber);
     }
 }

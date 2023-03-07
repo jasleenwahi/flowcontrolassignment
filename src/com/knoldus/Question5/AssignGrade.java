@@ -2,13 +2,9 @@ package com.knoldus.Question5;
 import java.util.Scanner;
 public class AssignGrade
 {
-    public static void main(String args[])
+    public static void assignGrades(double percentage)
     {
-        double percentage;
         char grade;
-        Scanner takeInput = new Scanner(System.in);
-        System.out.println("Enter the percentage");
-        percentage = takeInput.nextDouble();
         if(percentage>=95)
         {
             grade='O';
@@ -53,5 +49,15 @@ public class AssignGrade
             }
         }
         System.out.println("The grade of the student is: "+grade);
+
+    }
+    public static void main(String args[])
+    {
+        double percentage;
+        char grade;
+        Scanner takeInput = new Scanner(System.in);
+        System.out.println("Enter the percentage");
+        percentage = takeInput.nextDouble();
+        assignGrades(percentage);
     }
 }

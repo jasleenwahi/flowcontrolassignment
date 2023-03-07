@@ -2,12 +2,9 @@ package com.knoldus.Question9;
 import java.util.Scanner;
 public class PrimeNumber
 {
-    public static void main(String args[]) {
+    public static void checkPrime(int number, int limit)
+    {
         boolean isPrime = true;
-        int number, limit = 2;
-        Scanner takeInput = new Scanner(System.in);
-        System.out.println("Enter the number you want to check if prime or not");
-        number = takeInput.nextInt();
         if(number == 1)
         {
             isPrime = false;
@@ -35,5 +32,13 @@ public class PrimeNumber
                 System.out.println("Number is not prime");
             }
         }
+    }
+    public static void main(String args[]) {
+
+        int number, limit = 2;
+        Scanner takeInput = new Scanner(System.in);
+        System.out.println("Enter the number you want to check if prime or not");
+        number = takeInput.nextInt();
+        checkPrime(number, limit);
     }
 }
